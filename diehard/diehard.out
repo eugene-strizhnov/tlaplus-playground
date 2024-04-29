@@ -1,0 +1,234 @@
+@!@!@STARTMSG 2262:0 @!@!@
+TLC2 Version 2.16 of 31 December 2020 (rev: cdddf55)
+@!@!@ENDMSG 2262 @!@!@
+@!@!@STARTMSG 2187:0 @!@!@
+Running breadth-first search Model-Checking with fp 125 and seed 5354797523187844413 with 1 worker on 10 cores with 7282MB heap and 64MB offheap memory [pid: 87971] (Mac OS X 14.4.1 aarch64, Oracle Corporation 21.0.2 x86_64, MSBDiskFPSet, DiskStateQueue).
+@!@!@ENDMSG 2187 @!@!@
+@!@!@STARTMSG 2220:0 @!@!@
+Starting SANY...
+@!@!@ENDMSG 2220 @!@!@
+Parsing file /Users/eugene.strizhnov/Documents/playground/tla+/diehard/diehard.tla
+Parsing file /private/var/folders/fb/858hpfxd66775qdtz6hk2spr0000gp/T/TLC.tla
+Parsing file /private/var/folders/fb/858hpfxd66775qdtz6hk2spr0000gp/T/Integers.tla
+Parsing file /private/var/folders/fb/858hpfxd66775qdtz6hk2spr0000gp/T/Naturals.tla
+Parsing file /private/var/folders/fb/858hpfxd66775qdtz6hk2spr0000gp/T/Sequences.tla
+Parsing file /private/var/folders/fb/858hpfxd66775qdtz6hk2spr0000gp/T/FiniteSets.tla
+Semantic processing of module Naturals
+Semantic processing of module Sequences
+Semantic processing of module FiniteSets
+Semantic processing of module TLC
+Semantic processing of module Integers
+Semantic processing of module diehard
+@!@!@STARTMSG 2219:0 @!@!@
+SANY finished.
+@!@!@ENDMSG 2219 @!@!@
+@!@!@STARTMSG 2185:0 @!@!@
+Starting... (2024-04-26 19:36:24)
+@!@!@ENDMSG 2185 @!@!@
+@!@!@STARTMSG 2189:0 @!@!@
+Computing initial states...
+@!@!@ENDMSG 2189 @!@!@
+@!@!@STARTMSG 2190:0 @!@!@
+Finished computing initial states: 1 distinct state generated at 2024-04-26 19:36:25.
+@!@!@ENDMSG 2190 @!@!@
+@!@!@STARTMSG 2110:1 @!@!@
+Invariant Not4 is violated.
+@!@!@ENDMSG 2110 @!@!@
+@!@!@STARTMSG 2121:1 @!@!@
+The behavior up to this point is:
+@!@!@ENDMSG 2121 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+1: <Initial predicate>
+/\ big = 0
+/\ small = 0
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+2: <FillBig line 15, col 12 to line 15, col 37 of module diehard>
+/\ big = 5
+/\ small = 0
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+3: <FromBigToSmall line 21, col 19 to line 21, col 80 of module diehard>
+/\ big = 2
+/\ small = 3
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+4: <EmptySmall line 17, col 15 to line 17, col 38 of module diehard>
+/\ big = 2
+/\ small = 0
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+5: <FromBigToSmall line 21, col 19 to line 21, col 80 of module diehard>
+/\ big = 0
+/\ small = 2
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+6: <FillBig line 15, col 12 to line 15, col 37 of module diehard>
+/\ big = 5
+/\ small = 2
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2217:4 @!@!@
+7: <FromBigToSmall line 21, col 19 to line 21, col 80 of module diehard>
+/\ big = 4
+/\ small = 3
+
+@!@!@ENDMSG 2217 @!@!@
+@!@!@STARTMSG 2201:0 @!@!@
+The coverage statistics at 2024-04-26 19:36:25
+@!@!@ENDMSG 2201 @!@!@
+@!@!@STARTMSG 2773:0 @!@!@
+<Init line 8, col 1 to line 8, col 4 of module diehard>: 2:2
+@!@!@ENDMSG 2773 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 8, col 9 to line 8, col 32 of module diehard: 2
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<FillSmall line 14, col 1 to line 14, col 9 of module diehard>: 2:17
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 14, col 14 to line 14, col 37 of module diehard: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<FillBig line 15, col 1 to line 15, col 7 of module diehard>: 3:17
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 15, col 12 to line 15, col 37 of module diehard: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<EmptySmall line 17, col 1 to line 17, col 10 of module diehard>: 1:18
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 17, col 15 to line 17, col 38 of module diehard: 18
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<EmptyBig line 18, col 1 to line 18, col 8 of module diehard>: 1:17
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 18, col 13 to line 18, col 38 of module diehard: 17
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<FromSmallToBig line 20, col 1 to line 20, col 14 of module diehard>: 3:15
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 20, col 19 to line 20, col 44 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 20, col 26 to line 20, col 44 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 5, col 14 to line 5, col 35 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 5, col 17 to line 5, col 21 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 5, col 28 to line 5, col 28 of module diehard: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 5, col 35 to line 5, col 35 of module diehard: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 20, col 33 to line 20, col 43 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 20, col 49 to line 20, col 80 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 20, col 58 to line 20, col 80 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 6, col 14 to line 6, col 35 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 6, col 17 to line 6, col 21 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 6, col 28 to line 6, col 28 of module diehard: 5
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 6, col 35 to line 6, col 35 of module diehard: 10
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 20, col 65 to line 20, col 79 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2772:0 @!@!@
+<FromBigToSmall line 21, col 1 to line 21, col 14 of module diehard>: 3:15
+@!@!@ENDMSG 2772 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 21, col 19 to line 21, col 48 of module diehard: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 21, col 26 to line 21, col 48 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 6, col 14 to line 6, col 35 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 6, col 17 to line 6, col 21 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 6, col 28 to line 6, col 28 of module diehard: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 6, col 35 to line 6, col 35 of module diehard: 7
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 21, col 33 to line 21, col 47 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 21, col 53 to line 21, col 80 of module diehard: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |line 21, col 62 to line 21, col 80 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 5, col 14 to line 5, col 35 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 5, col 17 to line 5, col 21 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 5, col 28 to line 5, col 28 of module diehard: 8
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  |||line 5, col 35 to line 5, col 35 of module diehard: 7
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  ||line 21, col 69 to line 21, col 79 of module diehard: 15
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<TypeOk line 9, col 1 to line 9, col 6 of module diehard>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 9, col 11 to line 10, col 25 of module diehard: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2774:0 @!@!@
+<Not4 line 11, col 1 to line 11, col 4 of module diehard>
+@!@!@ENDMSG 2774 @!@!@
+@!@!@STARTMSG 2221:0 @!@!@
+  line 11, col 9 to line 11, col 19 of module diehard: 14
+@!@!@ENDMSG 2221 @!@!@
+@!@!@STARTMSG 2202:0 @!@!@
+End of statistics.
+@!@!@ENDMSG 2202 @!@!@
+@!@!@STARTMSG 2200:0 @!@!@
+Progress(7) at 2024-04-26 19:36:25: 73 states generated (13,904 s/min), 14 distinct states found (2,666 ds/min), 1 states left on queue.
+@!@!@ENDMSG 2200 @!@!@
+@!@!@STARTMSG 2199:0 @!@!@
+73 states generated, 14 distinct states found, 1 states left on queue.
+@!@!@ENDMSG 2199 @!@!@
+@!@!@STARTMSG 2194:0 @!@!@
+The depth of the complete state graph search is 7.
+@!@!@ENDMSG 2194 @!@!@
+@!@!@STARTMSG 2268:0 @!@!@
+The average outdegree of the complete state graph is 1 (minimum is 0, the maximum 2 and the 95th percentile is 2).
+@!@!@ENDMSG 2268 @!@!@
+@!@!@STARTMSG 2186:0 @!@!@
+Finished in 324ms at (2024-04-26 19:36:25)
+@!@!@ENDMSG 2186 @!@!@
